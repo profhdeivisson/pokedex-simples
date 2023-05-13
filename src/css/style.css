@@ -1,0 +1,160 @@
+.dark-mode:root{
+    --body-bg: #0b1e30;
+}
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Fim Reset CSS */
+
+/* ===== Scrollbar CSS ===== */
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #f1e9e9;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #582965;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+/* Fim Scrollbar   */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+.light-mode{
+    background-color: #2a75bb;
+}
+.dark-mode{
+    background-color: #0b2135;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+main{
+    padding: 20px;
+}
+.listagem-pokemon{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+.cartao-pokemon{
+    background-color: rgb(232, 245, 255);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2 ease-in-out;
+}
+.dark-mode .cartao-pokemon{
+    background-color: rgb(213, 213, 213);
+}
+.cartao-pokemon:hover{
+    background-color: rgb(167, 217, 255);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 5px;
+}
+.informacoes span{
+    padding: 5px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.gif{
+    width: 90px;
+    height: 90px;
+}
+.tipos{
+    display: flex;
+    gap: 15px;
+}
+.descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 15px;
+    padding-right: 10px;
+}
+.tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+.grama {
+    background-color: #7ac74c;
+}
+.veneno {
+    background-color: #df67ddfb;
+}
+.fogo {
+    background-color: #ee8130;
+}
+.agua {
+    background-color: #6390f0;
+}
+.inseto {
+    background-color: #a6b91a;
+}
